@@ -150,13 +150,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/05/文件拓展名截取、选取今天是周几写法/">文件拓展名截取、选取今天是周几写法</a>
+      <a class="article-title" href="/2018/05/28/文件拓展名截取、选取今天是周几写法/">文件拓展名截取、选取今天是周几写法</a>
     </h1>
   
 
         
-        <a href="/2018/06/05/文件拓展名截取、选取今天是周几写法/" class="archive-article-date">
-  	<time datetime="2018-06-05T05:39:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-05</time>
+        <a href="/2018/05/28/文件拓展名截取、选取今天是周几写法/" class="archive-article-date">
+  	<time datetime="2018-05-28T05:39:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-28</time>
 </a>
         
       </header>
@@ -175,23 +175,24 @@
   <span class="keyword">return</span> extname
 }
 </code></pre>
-<h4 id="改进后的方案"><a href="#改进后的方案" class="headerlink" title="改进后的方案"></a>改进后的方案</h4><p>增加几种情况：</p>
-<ol>
+<h4 id="改进后的方案：增加几种情况"><a href="#改进后的方案：增加几种情况" class="headerlink" title="改进后的方案：增加几种情况"></a>改进后的方案：增加几种情况</h4><ol>
 <li>点后无后缀</li>
 <li>无点</li>
-<li>有点，前面无文件名<pre><code class="JavaScript"><span class="keyword">const</span> extname2 = <span class="function">(<span class="params">filename</span>) =&gt;</span> {
-<span class="keyword">let</span> index = filename.lastIndexOf(<span class="string">"."</span>);
-<span class="keyword">let</span> len = filename.length
-<span class="keyword">if</span>(index &lt;= <span class="number">0</span>||index == len<span class="number">-1</span>){
- <span class="keyword">return</span> <span class="string">''</span>
-}<span class="keyword">else</span>{
-<span class="keyword">return</span> filename.substring(index,len)
-}
+<li>有点，前面无文件名</li>
+</ol>
+<pre><code class="JavaScript"><span class="keyword">const</span> extname2 = <span class="function">(<span class="params">filename</span>) =&gt;</span> {
+  <span class="keyword">let</span> index = filename.lastIndexOf(<span class="string">"."</span>);
+  <span class="keyword">let</span> len = filename.length
+  <span class="keyword">if</span>(index &lt;= <span class="number">0</span>||index == len<span class="number">-1</span>){
+    <span class="keyword">return</span> <span class="string">''</span>
+  }<span class="keyword">else</span>{
+   <span class="keyword">return</span> filename.substring(index,len)
+  }
 }
 </code></pre>
-</li>
-</ol>
-
+        
+          <a class="article-more-a" href="/2018/05/28/文件拓展名截取、选取今天是周几写法/#more">more >></a>
+        
       
 
       
@@ -214,7 +215,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/05/文件拓展名截取、选取今天是周几写法/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/28/文件拓展名截取、选取今天是周几写法/">展开全文 >></a>
         </p>
       
 
@@ -569,32 +570,51 @@
 
 
   
-    <article id="post-css实现文字两端对齐" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-浅谈pc和移动端的事件机制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/25/css实现文字两端对齐/">css实现文字两端对齐</a>
+      <a class="article-title" href="/2017/10/11/浅谈pc和移动端的事件机制/">浅谈pc和移动端的事件机制</a>
     </h1>
   
 
         
-        <a href="/2017/09/25/css实现文字两端对齐/" class="archive-article-date">
-  	<time datetime="2017-09-25T04:32:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
+        <a href="/2017/10/11/浅谈pc和移动端的事件机制/" class="archive-article-date">
+  	<time datetime="2017-10-11T06:58:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-需求：实现不同字的人名对齐"><a href="#1-需求：实现不同字的人名对齐" class="headerlink" title="1. 需求：实现不同字的人名对齐"></a>1. 需求：实现不同字的人名对齐</h3><p><img src="https://qinghuanhehuan.github.io/headpicture/name.png" alt="此处输入图片的描述"></p>
-<p>一般的处理方式用“空格”或者字符“<code>&amp;nbsp;</code>”来实现，但是人名太多，显然是不可能的。</p>
-<p>css2中的text-align有个属性叫justify，可以实现两端对齐文本效果。</p>
-<h3 id="2-简单的demo"><a href="#2-简单的demo" class="headerlink" title="2. 简单的demo"></a>2. 简单的demo</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>梨华<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>白玉峰<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>欧阳予倩<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+        <h3 id="事件机制："><a href="#事件机制：" class="headerlink" title="事件机制："></a>事件机制：</h3><ul>
+<li>在事件机制中，有3样最重要的东西：<ul>
+<li>事件生产者</li>
+<li>事件对象</li>
+<li>事件消费者</li>
+</ul>
+</li>
+<li>事件生产者可以产生一系列的事件对象，然后事件对象携带着必要的信息，传递给事件消费者。<ul>
+<li>单向的消息传递模型：事件消息总是由事件生产者传递给事件消费者；</li>
+<li>双向的消息传递模型：让两者同时作为事件生产者和事件消费者；一个事件生产者产生的事件可以对应有多个事件消费者；一个事件消费者也可以接受多个事件生产者产生的事件消息；</li>
+</ul>
+</li>
+</ul>
+<h3 id="事件流及事件绑定"><a href="#事件流及事件绑定" class="headerlink" title="事件流及事件绑定"></a>事件流及事件绑定</h3><ul>
+<li>EMCAScript标准规定事件流包含三个阶段：事件捕获阶段（传递过程），处于目标阶段，事件冒泡阶段（响应过程）。</li>
+</ul>
+<pre><code class="javascript">target.addEventListener(type, listener, useCapture); 
+<span class="comment">// 标准注册事件函数 </span>
+<span class="comment">// target:文档节点、document、window 或 XMLHttpRequest。 </span>
+<span class="comment">// 函数的参数：注册事件类型type，事件的回调函数，事件注册在捕获期间还是冒泡期间 </span>
+<span class="comment">// 例如：给button注册onclick事件，要是在捕获阶段注册，则 button.addEventListener("click",function(){},true); </span>
+target.removeEventListener(type, listener, useCapture); <span class="comment">//在某一个元素上撤销已注册的事件。</span>
+</code></pre>
         
-          <a class="article-more-a" href="/2017/09/25/css实现文字两端对齐/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/11/浅谈pc和移动端的事件机制/#more">more >></a>
         
       
 
@@ -608,7 +628,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -618,7 +638,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/25/css实现文字两端对齐/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/10/11/浅谈pc和移动端的事件机制/">展开全文 >></a>
         </p>
       
 
@@ -648,27 +668,58 @@
 
 
   
-    <article id="post-随笔测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-微信自动播放音频（视频同理）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/19/随笔测试/">随笔测试</a>
+      <a class="article-title" href="/2017/10/09/微信自动播放音频（视频同理）/">微信自动播放音频（视频同理）</a>
     </h1>
   
 
         
-        <a href="/2017/09/19/随笔测试/" class="archive-article-date">
-  	<time datetime="2017-09-19T07:31:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
+        <a href="/2017/10/09/微信自动播放音频（视频同理）/" class="archive-article-date">
+  	<time datetime="2017-10-09T06:49:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>comments: false<br>随笔测试</p>
+        <pre><code class="javascript">&lt;script&gt;
+  <span class="comment">// 音乐播放</span>
+  <span class="function"><span class="keyword">function</span> <span class="title">autoPlayMusic</span>(<span class="params"></span>) </span>{
+      <span class="comment">// 自动播放音乐效果，解决浏览器或者APP自动播放问题</span>
+      <span class="function"><span class="keyword">function</span> <span class="title">musicInBrowserHandler</span>(<span class="params"></span>) </span>{
+          musicPlay(<span class="literal">true</span>);
+          <span class="built_in">document</span>.body.removeEventListener(<span class="string">'touchstart'</span>, musicInBrowserHandler);
+      }
+      <span class="built_in">document</span>.body.addEventListener(<span class="string">'touchstart'</span>, musicInBrowserHandler);
+
+      <span class="comment">// 自动播放音乐效果，解决微信自动播放问题</span>
+      <span class="function"><span class="keyword">function</span> <span class="title">musicInWeixinHandler</span>(<span class="params"></span>) </span>{
+          musicPlay(<span class="literal">true</span>);
+          <span class="built_in">document</span>.addEventListener(<span class="string">"WeixinJSBridgeReady"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
+              musicPlay(<span class="literal">true</span>);
+          }, <span class="literal">false</span>);
+          <span class="built_in">document</span>.removeEventListener(<span class="string">'DOMContentLoaded'</span>, musicInWeixinHandler);
+      }
+      <span class="built_in">document</span>.addEventListener(<span class="string">'DOMContentLoaded'</span>, musicInWeixinHandler);
+  }
+  <span class="function"><span class="keyword">function</span> <span class="title">musicPlay</span>(<span class="params">isPlay</span>) </span>{
+      <span class="keyword">var</span> audio = <span class="built_in">document</span>.getElementById(<span class="string">'music'</span>);
+      <span class="keyword">if</span> (isPlay &amp;&amp; audio.paused) {
+          audio.play();
+      }
+      <span class="keyword">if</span> (!isPlay &amp;&amp; !audio.paused) {
+          audio.pause();
+      }
+  }
+  autoPlayMusic();
+&lt;<span class="regexp">/script&gt;</span>
+</code></pre>
 
       
 
@@ -682,7 +733,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">微信</a>
         		</li>
       		
 		</ul>
@@ -692,7 +747,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/19/随笔测试/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/10/09/微信自动播放音频（视频同理）/">展开全文 >></a>
         </p>
       
 
@@ -722,28 +777,35 @@
 
 
   
-    <article id="post-Hello-World" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-HTTP状态码301与302详解及区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/19/Hello-World/">Hello World</a>
+      <a class="article-title" href="/2017/09/30/HTTP状态码301与302详解及区别/">HTTP状态码301与302详解及区别</a>
     </h1>
   
 
         
-        <a href="/2017/09/19/Hello-World/" class="archive-article-date">
-  	<time datetime="2017-09-19T07:24:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
+        <a href="/2017/09/30/HTTP状态码301与302详解及区别/" class="archive-article-date">
+  	<time datetime="2017-09-30T06:50:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hello world, Test!!!</p>
-
+        <ul>
+<li>301 redirect: 301 代表永久性转移(Permanently Moved)</li>
+<li>302 redirect: 302 代表暂时性转移(Temporarily Moved )</li>
+<li>详细来说，301和302状态码都表示重定向，就是说浏览器在拿到服务器返回的这个状态码后会自动跳转到一个新的URL地址，这个地址可以从响应的Location首部中获取（用户看到的效果就是他输入的地址A瞬间变成了另一个地址B）——这是它们的共同点。他们的不同在于。301表示旧地址A的资源已经被永久地移除了（这个资源不可访问了），搜索引擎在抓取新内容的同时也将旧的网址交换为重定向之后的网址；302表示旧地址A的资源还在（仍然可以访问），这个重定向只是临时地从旧地址A跳转到地址B，搜索引擎会抓取新的内容而保存旧的网址。</li>
+</ul>
+<h3 id="什么是重定向？"><a href="#什么是重定向？" class="headerlink" title="什么是重定向？"></a>什么是重定向？</h3><p>就是地址A跳转到地址B。百度百科的解释：重定向(Redirect)就是通过各种方法将各种网络请求重新定个方向转到其它位置（如：网页重定向、域名的重定向、路由选择的变化也是对数据报文经由路径的一种重定向）。</p>
+        
+          <a class="article-more-a" href="/2017/09/30/HTTP状态码301与302详解及区别/#more">more >></a>
+        
       
 
       
@@ -756,7 +818,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">开始</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
         		</li>
       		
 		</ul>
@@ -766,7 +828,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/19/Hello-World/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/09/30/HTTP状态码301与302详解及区别/">展开全文 >></a>
         </p>
       
 
@@ -796,6 +858,196 @@
 
 
   
+    <article id="post-HTTP基本概念" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/29/HTTP基本概念/">HTTP基本概念</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/29/HTTP基本概念/" class="archive-article-date">
+  	<time datetime="2017-09-29T06:50:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="什么是HTTP"><a href="#什么是HTTP" class="headerlink" title="什么是HTTP"></a>什么是HTTP</h3><ul>
+<li>HTTP是干嘛用的？<ul>
+<li>学名：超文本传输协议，是一种网络协议。它是基于TCP/IP的应用层协议。被设计用于web浏览器和web服务器之间的通信，也可以用于其他目的。</li>
+<li>因为是专门用来传输诸如HTML的超媒体文档等web内容的。因为HTML本身就是超文本标记语言，HTML中包含文本、图片、音视频等内容，所以用来传输它的协议自然就叫超文本传输协议了。</li>
+<li>它是web上数据交换的基础，是一种client-server协议，请求通常是由浏览器发起。一个完整的web文档由不同的子文档重新组建成的，如文本，布局描述，图片，视频，脚本等。</li>
+</ul>
+</li>
+<li>怎么和服务器通信？<ul>
+<li>HTTP遵循经典的客户端-服务端模型，客户端打开一个连接以发出请求，然后等待它收到服务器端响应。HTTP是无状态协议，意味着服务器不会在两个请求之间保留任何数据（状态）。</li>
+<li>客户端和服务端通过交互各自的消息（与数据流正好相反）来进行交互。通常由浏览器这样的客户端发出的消息叫做requests，那么被服务端回应的消息就叫做response。</li>
+</ul>
+</li>
+<li>HTTP被设计于20世纪90年代初，是一种可扩展的应用层协议。虽然理论上它可以通过任何可靠的传输协议来发送，但是它还是通过TCP或TLS-加密的TCP连接来发送。因为它有很好的扩展性，时至今日它不仅被用来传输超文本文档，还用来传输图片、视频或向服务器发送如HTML表单这样的信息。HTTP还可以根据网页需求，来获取部分web文档内容来更新网页。</li>
+<li>HTTP遵循经典的客户端-服务端模型，客户端打开一个连接以发出请求，然后等待它收到服务端响应。HTTP是无状态协议，意味着服务器不会再两个请求之间保留任何数据（状态）。虽然通常基于TCP/IP层，但可以在任何可靠的传输层上使用：如一个不会静默丢失消息的协议，UDP。</li>
+</ul>
+<h3 id="HTTP的基本性质"><a href="#HTTP的基本性质" class="headerlink" title="HTTP的基本性质"></a>HTTP的基本性质</h3><ul>
+<li>总结：简单、可扩展、无状态<ul>
+<li>HTTP是简单的：即便在HTTP/2中把HTTP消息封装到frames中，HTTP大体上还是被设计成可读的且简单的。HTTP的消息能够让人读懂且明白它的意思，还允许简单的测试，放低了门槛，更有利于新来者了解。</li>
+<li>HTTP是可扩展的：在HTTP/1中就出现了，HTTP headers让协议扩展变得非诚容易。只要服务端和客户端在新的headers上语义达成一致，新的功能就可以轻松地被加进来。</li>
+<li>HTTP是无状态，有会话的：HTTP是无状态的，在同一个连接中，两个成功执行的请求之间是没有关系的。这就带来一个问题，用户没办法在一个网站进行连续的交互，比如在一个电商网站里，用户把某个商品加入了购物车中，换了一个页面后再次添加商品，两次添加的请求没有联系，浏览器无法知道最终用户都选择了哪些商品。而用HTTP的头部扩展，HTTP Cookies就可以解决这个问题。把Cookies添加到头部中，创建一个会话来让每次请求都能共享相同的上下文信息，相同的状态。而HTTP的核心是无状态的，cookies的使用可以创建有状态的会话。</li>
+</ul>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2017/09/29/HTTP基本概念/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/29/HTTP基本概念/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-js设置css样式的几种方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/28/js设置css样式的几种方式/">js设置css样式的几种方式</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/28/js设置css样式的几种方式/" class="archive-article-date">
+  	<time datetime="2017-09-28T06:49:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="直接设置style属性"><a href="#直接设置style属性" class="headerlink" title="直接设置style属性"></a>直接设置style属性</h3><pre><code class="javascript">element.style.height = <span class="string">'100px'</span>;
+</code></pre>
+<h3 id="直接设置属性（只能用于某些属性，相关样式会自动识别）"><a href="#直接设置属性（只能用于某些属性，相关样式会自动识别）" class="headerlink" title="直接设置属性（只能用于某些属性，相关样式会自动识别）"></a>直接设置属性（只能用于某些属性，相关样式会自动识别）</h3><pre><code class="javascript">element.setAttribute(<span class="string">'height'</span>, <span class="number">100</span>);
+element.setAttribute(<span class="string">'height'</span>, <span class="string">'100px'</span>);
+</code></pre>
+<h3 id="设置style属性"><a href="#设置style属性" class="headerlink" title="设置style属性"></a>设置style属性</h3><pre><code class="javascript">element.setAttribute(<span class="string">'style'</span>, <span class="string">'height: 100px!important'</span>);
+</code></pre>
+<h3 id="使用setProperty，如果要设置-important，推荐用这种方法设置第三个参数"><a href="#使用setProperty，如果要设置-important，推荐用这种方法设置第三个参数" class="headerlink" title="使用setProperty，如果要设置!important，推荐用这种方法设置第三个参数"></a>使用setProperty，如果要设置!important，推荐用这种方法设置第三个参数</h3><pre><code class="javascript">element.style.setProperty(<span class="string">'height'</span>, <span class="string">'300px'</span>, <span class="string">'important'</span>);
+</code></pre>
+<h3 id="改变class"><a href="#改变class" class="headerlink" title="改变class"></a>改变class</h3><pre><code class="javascript">element.className = <span class="string">'blue'</span>;
+element.className = <span class="string">'blue fb'</span>;
+</code></pre>
+<h3 id="设置cssText"><a href="#设置cssText" class="headerlink" title="设置cssText"></a>设置cssText</h3><pre><code class="javascript">element.style.cssText = <span class="string">'height: 100px !important'</span>;
+element.style.cssText += <span class="string">'height: 100px !important'</span>;
+</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/28/js设置css样式的几种方式/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -881,11 +1133,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
+                <a href="javascript:void(0)" class="js-tag color3">angular</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">angular</a>
+                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -897,7 +1149,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">分享</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">移动端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -905,7 +1169,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js优化</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">微信</a>
               </li>
             
             <div class="clearfix"></div>
