@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>不存在的……</title>
+  <title>Archives: 2018/6 | 不存在的……</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="工作学习笔记">
 <meta property="og:type" content="website">
 <meta property="og:title" content="不存在的……">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
 <meta property="og:site_name" content="不存在的……">
 <meta property="og:description" content="工作学习笔记">
 <meta property="og:locale" content="zh-Hans">
@@ -143,62 +143,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-文件拓展名截取、选取今天是周几写法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/06/05/文件拓展名截取、选取今天是周几写法/" class="archive-article-date">
+  	<time datetime="2018-06-05T05:39:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-05</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/05/文件拓展名截取、选取今天是周几写法/">文件拓展名截取、选取今天是周几写法</a>
+      <a class="archive-article-title" href="/2018/06/05/文件拓展名截取、选取今天是周几写法/">文件拓展名截取、选取今天是周几写法</a>
     </h1>
   
 
-        
-        <a href="/2018/06/05/文件拓展名截取、选取今天是周几写法/" class="archive-article-date">
-  	<time datetime="2018-06-05T05:39:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="文件拓展名截取"><a href="#文件拓展名截取" class="headerlink" title="文件拓展名截取"></a>文件拓展名截取</h3><h4 id="之前的方案"><a href="#之前的方案" class="headerlink" title="之前的方案"></a>之前的方案</h4><pre><code class="JavaScript"><span class="keyword">const</span> extname = <span class="function">(<span class="params">filename</span>) =&gt;</span> {
-  <span class="keyword">let</span> arr = filename.split(<span class="string">"."</span>);
-  <span class="keyword">let</span> len = arr.length;
-  <span class="keyword">let</span> extname=<span class="string">''</span>
-  <span class="keyword">if</span>(len &gt; <span class="number">1</span>){
-    extname = arr[len<span class="number">-1</span>];
-    extname = arr[len<span class="number">-2</span>]==<span class="string">''</span>?<span class="string">''</span>: <span class="string">`.<span class="subst">${extname}</span>`</span>;
-    <span class="keyword">return</span> extname
-  }
-  <span class="keyword">return</span> extname
-}
-</code></pre>
-<h4 id="改进后的方案"><a href="#改进后的方案" class="headerlink" title="改进后的方案"></a>改进后的方案</h4><p>增加几种情况：</p>
-<ol>
-<li>点后无后缀</li>
-<li>无点</li>
-<li>有点，前面无文件名<pre><code class="JavaScript"><span class="keyword">const</span> extname2 = <span class="function">(<span class="params">filename</span>) =&gt;</span> {
-<span class="keyword">let</span> index = filename.lastIndexOf(<span class="string">"."</span>);
-<span class="keyword">let</span> len = filename.length
-<span class="keyword">if</span>(index &lt;= <span class="number">0</span>||index == len<span class="number">-1</span>){
- <span class="keyword">return</span> <span class="string">''</span>
-}<span class="keyword">else</span>{
-<span class="keyword">return</span> filename.substring(index,len)
-}
-}
-</code></pre>
-</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -210,593 +182,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/05/文件拓展名截取、选取今天是周几写法/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-ES6总结（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/25/ES6总结（二）/">ES6总结（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/25/ES6总结（二）/" class="archive-article-date">
-  	<time datetime="2018-05-25T02:28:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/25/ES6总结（二）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ES6总结（一）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/24/ES6总结（一）/">ES6总结（一）</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/24/ES6总结（一）/" class="archive-article-date">
-  	<time datetime="2018-05-24T02:28:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这篇是个人总结的ES6用法，可能是不全面，但项目开发中用到的ES6语法基本都有。</p>
-<h3 id="let和const命令"><a href="#let和const命令" class="headerlink" title="let和const命令"></a>let和const命令</h3><h4 id="作用域的概念"><a href="#作用域的概念" class="headerlink" title="作用域的概念"></a>作用域的概念</h4><p>ES5：全局作用域和函数作用域<br>ES6：块级作用域；严格模式</p>
-<h4 id="如何使用let和const"><a href="#如何使用let和const" class="headerlink" title="如何使用let和const"></a>如何使用let和const</h4><ol>
-<li>let声明的变量只在自己的作用域内有效；</li>
-<li>let不能重复定义变量；</li>
-<li>const声明一个常量，不能修改；</li>
-<li>const声明的时候必须赋值；</li>
-<li>const可以修改一个对象的数值，因为const保存的是对象的指针，并不保存对象本身；</li>
-</ol>
-        
-          <a class="article-more-a" href="/2018/05/24/ES6总结（一）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/24/ES6总结（一）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-技术人员如何规划职业道路" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/23/技术人员如何规划职业道路/">技术人员如何规划职业道路</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/23/技术人员如何规划职业道路/" class="archive-article-date">
-  	<time datetime="2018-05-23T01:44:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>  前段时间在微信直播群里听到了前阿里钉钉技术总监、现准上市公司技术合伙人/副总裁武彻老师的技术分享：如何从小白成长为技术合伙人。刚听完觉得就是一些假大空的套话，将一些不痛不痒的理论并不能对实际开发做什么指导。<br>但是，这段时间我一直在想，既然是成功者的分享也是有一定的借鉴之处，只靠一场技术分享就能有很多收获或进步是不可能的，开发经验的累积和思考，一步步的积累才会有所进步。真正让人感到“痛苦”的成长，才会有收获。<br>下面是关于直播的一些分享：</p>
-<h2 id="1-技术的价值"><a href="#1-技术的价值" class="headerlink" title="1.技术的价值"></a>1.技术的价值</h2><h3 id="先进生产力"><a href="#先进生产力" class="headerlink" title="先进生产力"></a>先进生产力</h3><p>一个公司技术团队的稳健是实现一切需求的基石，尤其需求在不同阶段对产品质量以及响应方面的高要求。</p>
-<h3 id="实现需求三步曲"><a href="#实现需求三步曲" class="headerlink" title="实现需求三步曲"></a>实现需求三步曲</h3><ol>
-<li>勉强做出来 </li>
-<li>独挡一面 </li>
-<li>成为tl</li>
-</ol>
-        
-          <a class="article-more-a" href="/2018/05/23/技术人员如何规划职业道路/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/23/技术人员如何规划职业道路/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Angular2入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/09/Angular2入门/">Angular2入门</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/09/Angular2入门/" class="archive-article-date">
-  	<time datetime="2018-04-09T02:28:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Angular起源"><a href="#Angular起源" class="headerlink" title="Angular起源"></a>Angular起源</h2><p>2009年，Misko hevery和Adam Abrons在业务时间创造了GetAngular</p>
-<h2 id="迭代之路"><a href="#迭代之路" class="headerlink" title="迭代之路"></a>迭代之路</h2><ol>
-<li>12年6月，AngularJS1.0.0正式版推出：亮点功能基本齐备，如双向绑定、依赖注入、指令等</li>
-<li>AngularJS 1.3.x放弃支持IE8浏览器：推出了单次绑定语法</li>
-<li>AngularJS 1.5.x增加类似组件式书写体验：主要是为过渡Angular2做铺垫</li>
-</ol>
-<h2 id="AngularJS-1-x的困境"><a href="#AngularJS-1-x的困境" class="headerlink" title="AngularJS 1.x的困境"></a>AngularJS 1.x的困境</h2><ol>
-<li>饱受诟病的性能问题：脏检查</li>
-<li>落后于当前Web发展理念（如组件开发方式）</li>
-<li>对手机端不够友好：并没有考虑移动端的适配；太笨重</li>
-</ol>
-        
-          <a class="article-more-a" href="/2018/04/09/Angular2入门/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/09/Angular2入门/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-css实现文字两端对齐" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/25/css实现文字两端对齐/">css实现文字两端对齐</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/25/css实现文字两端对齐/" class="archive-article-date">
-  	<time datetime="2017-09-25T04:32:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-需求：实现不同字的人名对齐"><a href="#1-需求：实现不同字的人名对齐" class="headerlink" title="1. 需求：实现不同字的人名对齐"></a>1. 需求：实现不同字的人名对齐</h3><p><img src="https://qinghuanhehuan.github.io/headpicture/name.png" alt="此处输入图片的描述"></p>
-<p>一般的处理方式用“空格”或者字符“<code>&amp;nbsp;</code>”来实现，但是人名太多，显然是不可能的。</p>
-<p>css2中的text-align有个属性叫justify，可以实现两端对齐文本效果。</p>
-<h3 id="2-简单的demo"><a href="#2-简单的demo" class="headerlink" title="2. 简单的demo"></a>2. 简单的demo</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>梨华<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>白玉峰<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>欧阳予倩<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/09/25/css实现文字两端对齐/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/25/css实现文字两端对齐/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-随笔测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/19/随笔测试/">随笔测试</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/19/随笔测试/" class="archive-article-date">
-  	<time datetime="2017-09-19T07:31:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>comments: false<br>随笔测试</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/19/随笔测试/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hello-World" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/19/Hello-World/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/19/Hello-World/" class="archive-article-date">
-  	<time datetime="2017-09-19T07:24:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hello world, Test!!!</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">开始</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/19/Hello-World/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -818,9 +216,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
