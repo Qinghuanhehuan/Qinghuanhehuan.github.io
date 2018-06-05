@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 随笔 | 不存在的……</title>
+  <title>ES6总结（一） | 不存在的……</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="工作学习笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="不存在的……">
-<meta property="og:url" content="http://yoursite.com/tags/随笔/index.html">
+  <meta name="description" content="前言这篇是个人总结的ES6用法，可能是不全面，但项目开发中用到的ES6语法基本都有。 let和const命令作用域的概念ES5：全局作用域和函数作用域ES6：块级作用域；严格模式 如何使用let和const let声明的变量只在自己的作用域内有效； let不能重复定义变量； const声明一个常量，不能修改； const声明的时候必须赋值； const可以修改一个对象的数值，因为const保存的是">
+<meta name="keywords" content="ES6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6总结（一）">
+<meta property="og:url" content="http://yoursite.com/2018/05/24/ES6总结（一）/index.html">
 <meta property="og:site_name" content="不存在的……">
-<meta property="og:description" content="工作学习笔记">
+<meta property="og:description" content="前言这篇是个人总结的ES6用法，可能是不全面，但项目开发中用到的ES6语法基本都有。 let和const命令作用域的概念ES5：全局作用域和函数作用域ES6：块级作用域；严格模式 如何使用let和const let声明的变量只在自己的作用域内有效； let不能重复定义变量； const声明一个常量，不能修改； const声明的时候必须赋值； const可以修改一个对象的数值，因为const保存的是">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-05T05:32:04.064Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不存在的……">
-<meta name="twitter:description" content="工作学习笔记">
+<meta name="twitter:title" content="ES6总结（一）">
+<meta name="twitter:description" content="前言这篇是个人总结的ES6用法，可能是不全面，但项目开发中用到的ES6语法基本都有。 let和const命令作用域的概念ES5：全局作用域和函数作用域ES6：块级作用域；严格模式 如何使用let和const let声明的变量只在自己的作用域内有效； let不能重复定义变量； const声明一个常量，不能修改； const声明的时候必须赋值； const可以修改一个对象的数值，因为const保存的是">
   
     <link rel="alternative" href="/atom.xml" title="不存在的……" type="application/atom+xml">
   
@@ -141,60 +143,250 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ES6总结（一）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/19/随笔测试/" class="archive-article-date">
-  	<time datetime="2017-09-19T07:31:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/19/随笔测试/">随笔测试</a>
+    <h1 class="article-title" itemprop="name">
+      ES6总结（一）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/05/24/ES6总结（一）/" class="archive-article-date">
+  	<time datetime="2018-05-24T02:28:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这篇是个人总结的ES6用法，可能是不全面，但项目开发中用到的ES6语法基本都有。</p>
+<h3 id="let和const命令"><a href="#let和const命令" class="headerlink" title="let和const命令"></a>let和const命令</h3><h4 id="作用域的概念"><a href="#作用域的概念" class="headerlink" title="作用域的概念"></a>作用域的概念</h4><p>ES5：全局作用域和函数作用域<br>ES6：块级作用域；严格模式</p>
+<h4 id="如何使用let和const"><a href="#如何使用let和const" class="headerlink" title="如何使用let和const"></a>如何使用let和const</h4><ol>
+<li>let声明的变量只在自己的作用域内有效；</li>
+<li>let不能重复定义变量；</li>
+<li>const声明一个常量，不能修改；</li>
+<li>const声明的时候必须赋值；</li>
+<li>const可以修改一个对象的数值，因为const保存的是对象的指针，并不保存对象本身；</li>
+</ol>
+<a id="more"></a>
+<h3 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h3><p>什么是解构赋值？通俗地讲：左边一种结构，右边一种结构，左右一一对应进行赋值。</p>
+<h4 id="数组解构赋值："><a href="#数组解构赋值：" class="headerlink" title="数组解构赋值："></a>数组解构赋值：</h4><ol>
+<li>基本使用方法；</li>
+<li>默认值；没有成功配对的值为undefined；</li>
+<li>使用场景：<ul>
+<li>变量交换</li>
+<li>取出函数的返回结果</li>
+<li>返回多个值的时候，选择性地接收某些值</li>
+<li>不知道函数返回的长度时，可以使用…接收一个数组</li>
+</ul>
+</li>
+</ol>
+<h4 id="对象解构赋值："><a href="#对象解构赋值：" class="headerlink" title="对象解构赋值："></a>对象解构赋值：</h4><ol>
+<li>基本使用方法：左侧对象，右侧对象，使用key/value进行配对</li>
+<li>默认值；</li>
+<li>使用场景：<ul>
+<li>取出json格式的值，注意对象和数组的嵌套</li>
+</ul>
+</li>
+</ol>
+<h4 id="还有字符串解构赋值、布尔值解构赋值、函数参数解构赋值、数值解构赋值"><a href="#还有字符串解构赋值、布尔值解构赋值、函数参数解构赋值、数值解构赋值" class="headerlink" title="还有字符串解构赋值、布尔值解构赋值、函数参数解构赋值、数值解构赋值"></a>还有字符串解构赋值、布尔值解构赋值、函数参数解构赋值、数值解构赋值</h4><h3 id="正则扩展"><a href="#正则扩展" class="headerlink" title="正则扩展"></a>正则扩展</h3><h4 id="构造函数的变化"><a href="#构造函数的变化" class="headerlink" title="构造函数的变化"></a>构造函数的变化</h4><ol>
+<li>new RegExp(/xyz/ig,’I’)：第二个参数的修饰符会覆盖第一个参数的修饰符</li>
+<li>ES6中允许第一个参数上正则表达式的方式，允许第二个参数再去填写修饰符，结果就是后面的修饰符会覆盖掉前面正则表达式所用的修饰符</li>
+<li>flags：es6新增，用来获取正则表达式修饰符的属性</li>
+</ol>
+<h4 id="u修饰符"><a href="#u修饰符" class="headerlink" title="u修饰符"></a>u修饰符</h4><ol>
+<li>在正则处理Unicode字符的特征值</li>
+<li>如果正则表达式中的字节是大于2个字符的，一定要加上u修饰符才能正确匹配，否则会提示错误</li>
+<li>点并不能匹配任何字符，它是有条件的：小于2个字节长度的字符</li>
+<li>点也不能识别这4种字符：换行符，回车符，行分隔符，段分隔符，但可以使用s修饰符识别</li>
+</ol>
+<h4 id="y修饰符"><a href="#y修饰符" class="headerlink" title="y修饰符"></a>y修饰符</h4><ol>
+<li>与g修饰符的比较：都是全局匹配；g是从上一次匹配的位置继续寻找，y匹配的第一个必须是下一个紧跟着的字符</li>
+<li>sticky：判断正则表达式是否开启了带y的修饰符的属性</li>
+</ol>
+<h4 id="s修饰符"><a href="#s修饰符" class="headerlink" title="s修饰符"></a>s修饰符</h4><ol>
+<li>作为一种提案</li>
+</ol>
+<h3 id="字符串扩展"><a href="#字符串扩展" class="headerlink" title="字符串扩展"></a>字符串扩展</h3><h4 id="Unicode表示法"><a href="#Unicode表示法" class="headerlink" title="Unicode表示法"></a>Unicode表示法</h4><ol>
+<li>console.log(’s’,<code>\u{20BB7}</code>);</li>
+<li>每两个字节就是一个长度</li>
+<li>ES5：charAt()取某个位置的字符；charCodeAt()取某个位置Unicode编码的码值，只取2个字节；fromCharCode()根据码值打出对应的字符；</li>
+<li>ES6：codePointAt()取某个位置Unicode编码的码值，可以取4个字节；fromCodePoint()根据码值打出对应的字符；</li>
+</ol>
+<h4 id="遍历接口"><a href="#遍历接口" class="headerlink" title="遍历接口"></a>遍历接口</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> str = ‘\u&#123;<span class="number">20</span>bb7&#125;abc’;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">let</span> code <span class="keyword">of</span> str)&#123;</div><div class="line">    <span class="built_in">console</span>.log(‘es6’,code);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="模版字符串"><a href="#模版字符串" class="headerlink" title="模版字符串"></a>模版字符串</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = ‘Hello’;</div><div class="line"><span class="keyword">let</span> m = <span class="string">`<span class="subst">$&#123;a&#125;</span>,world`</span>;</div></pre></td></tr></table></figure>
+<h4 id="新增方法"><a href="#新增方法" class="headerlink" title="新增方法"></a>新增方法</h4><ol>
+<li>判断字符串中是否包含某个字符：includes()</li>
+<li>判断字符串是否以某些字符为起始的：startsWith()</li>
+<li>判断字符串是否以某些字符为结束的：endsWith()</li>
+<li>重复：repeat()</li>
+<li>raw会对所有的斜杆进行转义：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">String</span>.raw<span class="string">`Hi\n<span class="subst">$&#123;<span class="number">1</span>+<span class="number">2</span>&#125;</span>`</span> <span class="comment">//Hi\n3</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="ES7的草案"><a href="#ES7的草案" class="headerlink" title="ES7的草案"></a>ES7的草案</h4><ol>
+<li>补白：<pre><code class="JavaScript"><span class="string">'1'</span>.padStart(<span class="number">2</span>,’<span class="number">0</span>’) <span class="comment">//01</span>
+<span class="string">'1'</span>.padEnd(<span class="number">2</span>,’<span class="number">0</span>’) <span class="comment">//10</span>
+</code></pre>
+</li>
+<li>应用场景：日期/时间小于10的数字</li>
+</ol>
+<h4 id="标签模版："><a href="#标签模版：" class="headerlink" title="标签模版："></a>标签模版：</h4><ol>
+<li>防止xxs攻击</li>
+<li>处理多语言模版</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/05/24/ES6总结（一）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/05/25/ES6总结（二）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          ES6总结（二）
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/05/23/技术人员如何规划职业道路/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">技术人员如何规划职业道路</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -217,9 +409,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
