@@ -484,6 +484,114 @@
 
 
   
+    <article id="post-TypeScipt入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/11/TypeScipt入门/">TypeScipt入门</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/11/TypeScipt入门/" class="archive-article-date">
+  	<time datetime="2018-04-11T08:15:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="TypeScript是什么？"><a href="#TypeScript是什么？" class="headerlink" title="TypeScript是什么？"></a>TypeScript是什么？</h2><ol>
+<li>TypeScript是由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。</li>
+<li>TypeScript 扩展了 JavaScript 的句法，所以任何现有的 JavaScript 程序可以不加改变的在 TypeScript 下工作。TypeScript 是为大型应用之开发而设计，而编译时它产生 JavaScript 以确保兼容性。</li>
+</ol>
+<p>安装：npm install -g typescript<br>编译：tsc app.ts # app.ts =&gt; app.js</p>
+<h2 id="TypeScript数据类型"><a href="#TypeScript数据类型" class="headerlink" title="TypeScript数据类型"></a>TypeScript数据类型</h2><ul>
+<li>Boolean类型：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> isDone: boolean = <span class="literal">false</span>; <span class="comment">// tsc =&gt; var isDone = false;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>Number类型：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> count: number = <span class="number">10</span>; <span class="comment">// tsc =&gt; var count = 10;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>String类型：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name: string = <span class="string">'Semliker'</span>; <span class="comment">// tsc =&gt; var name = 'Semliker';</span></div></pre></td></tr></table></figure>
+<ul>
+<li>Array类型：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> list: number[] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]; <span class="comment">// tsc =&gt; var list = [1,2,3];</span></div><div class="line"><span class="keyword">let</span> list: <span class="built_in">Array</span>&lt;number&gt; = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]; <span class="comment">// tsc =&gt; var list = [1,2,3];</span></div></pre></td></tr></table></figure>
+<ul>
+<li>Enum类型：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">enum Direction &#123;</div><div class="line">    NORTH，</div><div class="line">    SOUTH，</div><div class="line">    EAST，</div><div class="line">    WEST</div><div class="line">&#125;;</div><div class="line"><span class="keyword">let</span> dir: Direction = Direction.NORTH;</div></pre></td></tr></table></figure>
+<ul>
+<li>Any（动态类型）：</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> notSure: any = <span class="number">4</span>;</div><div class="line">notSure = <span class="string">"maybe a string instead"</span>;</div><div class="line">notSure = <span class="literal">false</span>;</div><div class="line">=&gt; <span class="function"><span class="params">tsc</span> =&gt;</span></div><div class="line"><span class="keyword">var</span> notSure = <span class="number">4</span>;</div><div class="line">notSure = <span class="string">"maybe a string instead"</span>;</div><div class="line">notSure = <span class="literal">false</span>;</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/04/11/TypeScipt入门/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">TypeScipt</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/11/TypeScipt入门/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Angular2入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -956,94 +1064,6 @@ target.removeEventListener(type, listener, useCapture); <span class="comment">//
 
 
   
-    <article id="post-js设置css样式的几种方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/28/js设置css样式的几种方式/">js设置css样式的几种方式</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/28/js设置css样式的几种方式/" class="archive-article-date">
-  	<time datetime="2017-09-28T06:49:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="直接设置style属性"><a href="#直接设置style属性" class="headerlink" title="直接设置style属性"></a>直接设置style属性</h3><pre><code class="javascript">element.style.height = <span class="string">'100px'</span>;
-</code></pre>
-<h3 id="直接设置属性（只能用于某些属性，相关样式会自动识别）"><a href="#直接设置属性（只能用于某些属性，相关样式会自动识别）" class="headerlink" title="直接设置属性（只能用于某些属性，相关样式会自动识别）"></a>直接设置属性（只能用于某些属性，相关样式会自动识别）</h3><pre><code class="javascript">element.setAttribute(<span class="string">'height'</span>, <span class="number">100</span>);
-element.setAttribute(<span class="string">'height'</span>, <span class="string">'100px'</span>);
-</code></pre>
-<h3 id="设置style属性"><a href="#设置style属性" class="headerlink" title="设置style属性"></a>设置style属性</h3><pre><code class="javascript">element.setAttribute(<span class="string">'style'</span>, <span class="string">'height: 100px!important'</span>);
-</code></pre>
-<h3 id="使用setProperty，如果要设置-important，推荐用这种方法设置第三个参数"><a href="#使用setProperty，如果要设置-important，推荐用这种方法设置第三个参数" class="headerlink" title="使用setProperty，如果要设置!important，推荐用这种方法设置第三个参数"></a>使用setProperty，如果要设置!important，推荐用这种方法设置第三个参数</h3><pre><code class="javascript">element.style.setProperty(<span class="string">'height'</span>, <span class="string">'300px'</span>, <span class="string">'important'</span>);
-</code></pre>
-<h3 id="改变class"><a href="#改变class" class="headerlink" title="改变class"></a>改变class</h3><pre><code class="javascript">element.className = <span class="string">'blue'</span>;
-element.className = <span class="string">'blue fb'</span>;
-</code></pre>
-<h3 id="设置cssText"><a href="#设置cssText" class="headerlink" title="设置cssText"></a>设置cssText</h3><pre><code class="javascript">element.style.cssText = <span class="string">'height: 100px !important'</span>;
-element.style.cssText += <span class="string">'height: 100px !important'</span>;
-</code></pre>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/28/js设置css样式的几种方式/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1133,11 +1153,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">angular</a>
+                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
+                <a href="javascript:void(0)" class="js-tag color3">angular</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1145,27 +1165,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分享</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js优化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">移动端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1173,7 +1173,31 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">移动端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分享</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">微信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">TypeScipt</a>
               </li>
             
             <div class="clearfix"></div>
